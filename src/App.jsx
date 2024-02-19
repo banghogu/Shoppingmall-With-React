@@ -11,6 +11,8 @@ import NotFoundPage from './pages/NotFoundPage'
 function App() {
 
   return (
+
+    //라우터 설정. 기본 Layout (header,footer)으로 감싸고, 주소에 따라 보여지는 페이지 다르게 하기
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>

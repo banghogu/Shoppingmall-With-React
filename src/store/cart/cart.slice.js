@@ -30,7 +30,7 @@ export const cartSlice = createSlice({
             state.userId = action.payload
             localStorage.setItem('userId', JSON.stringify(state.userId))
         },
-        removeUserId: (state, action) => {
+        removeUserId: (state) => {
             state.userId = ""
             localStorage.setItem('userId', JSON.stringify(state.userId))
         },

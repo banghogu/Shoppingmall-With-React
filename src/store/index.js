@@ -8,12 +8,12 @@ import orderSlice from "./order/order.slice";
 
 export const store = configureStore({
     reducer: {
-        userSlice,
-        categoriesSlice,
-        productsSlice,
-        cartSlice,
-        productSlice,
-        orderSlice
+        userSlice:userSlice,
+        categoriesSlice:categoriesSlice,
+        productsSlice:productsSlice,
+        cartSlice:cartSlice,
+        productSlice:productSlice,
+        orderSlice:orderSlice
 
     }
 })

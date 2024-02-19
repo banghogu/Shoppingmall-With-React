@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import styles from './CardItem.module.scss'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
@@ -26,7 +26,7 @@ const CardItem = ({ item }) => {
       <div>
         <button
           disabled={productMatching}
-          onClick={() => !productMatching && addItemToCart()}
+          onClick={() => (productMatching === false) && addItemToCart()}
         >
           {productMatching ? "장바구니에 담긴 제품" : "장바구니에 담기"}
         </button>

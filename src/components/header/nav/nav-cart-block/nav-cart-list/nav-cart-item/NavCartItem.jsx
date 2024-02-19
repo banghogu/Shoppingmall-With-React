@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
 import styles from './NavCartItem.module.scss'
 import { deleteFromCart } from '../../../../../../store/cart/cart.slice';

@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './NavCartList.module.scss';
 import { useSelector } from 'react-redux';
 import NavCartItem from './nav-cart-item/NavCartItem';

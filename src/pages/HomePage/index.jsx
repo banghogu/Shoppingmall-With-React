@@ -1,5 +1,3 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
 import FiltersCategory from './filter-category/FiltersCategory'
 import CardList from './card-list/CardList'
 import CountProducts from './count-products/CountProducts'

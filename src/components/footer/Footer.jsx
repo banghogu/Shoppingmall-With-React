@@ -1,4 +1,3 @@
-import React from 'react'
 import { BsGithub } from 'react-icons/bs';
 import styles from './Footer.module.scss';
 
@@ -7,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className='container'>
         <div className={styles.contacts}>
-          <a href="https://github.com">
+          <a href="https://github.com/banghogu">
             {" "}
             <BsGithub />
           </a>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import CartEmpty from '../../../components/cart-empty/CartEmpty';
 import { useAuth } from '../../../hooks/useAuth'
 import { fetchOrder } from '../../../store/order/order.slice';

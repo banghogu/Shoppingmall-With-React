@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { getTotalPrice } from '../../../../store/cart/cart.slice';
 import styles from './NavCartBlock.module.scss';
 

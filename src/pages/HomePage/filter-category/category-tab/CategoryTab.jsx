@@ -2,6 +2,7 @@ import { setActive} from '../../../../store/categories/categories.slice';
 import styles from './CategoryTab.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 
+// eslint-disable-next-line react/prop-types
 const CategoryTab = ({ text, categoryName }) => {
     const category = useSelector((state) => state.categoriesSlice)
     const dispatch = useDispatch()

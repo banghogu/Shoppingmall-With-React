@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux'
 import { decrementProduct, deleteFromCart, incrementProduct } from '../../../../store/cart/cart.slice'
 import styles from './CartItem.module.scss';
@@ -20,8 +20,7 @@ const CartItem = ({ item }) => {
   const decrementCount = () => {
     dispatch(decrementProduct(item.id))
   }
-
-  console.log(item)
+  
   return (
     <div className={styles.cart_item}>
       <Link to={`/card/${item.id}`}>

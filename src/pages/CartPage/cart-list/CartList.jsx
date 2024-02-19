@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSelector } from 'react-redux'
 import styles from './CartList.module.scss';
 import CartItem from './cart-item/CartItem';
@@ -8,7 +7,7 @@ const CartList = () => {
 
     return (
         <div className={styles.cart_list}>
-            {products.map((product,index) => (
+            {products.map((product) => (
                 <CartItem key={product.id} item={product} />
             ))}
         </div>

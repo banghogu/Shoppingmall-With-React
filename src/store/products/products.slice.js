@@ -1,9 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+
+//전체 item을 가져오는 reducer
 export const fetchProducts = createAsyncThunk(
-    "products/fetchProducts",
-    async (category,thunkAPI) => {
+    "products/fetchProducts", //동일한 리듀서 충돌 방지
+    async (category,thunkAPI) => { 
         try {
             let response
             if(category){
@@ -26,7 +28,7 @@ const initialState = {
 }
 
 export const productsSlice = createSlice({
-    name: 'products',
+    name: 'products', //동일한 리듀서 충돌 방지
     initialState,
     reducers: {},
     extraReducers: (builder) => {
